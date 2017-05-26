@@ -5,7 +5,9 @@
 <p>My Heroes:</p>
 <ul class="heroes">
   <li *ngFor="let hero of heroes,let i=index" (click)="onSelect(hero)" [class.selected]="hero===selectedHero">
-    <span class="badge">{{hero.id}}</span> {{hero.name}}
+    <span class="badge">{{hero.id}}</span>
+    <span>{{hero.name}}</span>
+    <button class="delete" (click)="deleteHero(hero);$event.stopPropagation()">x</button>
   </li>
 </ul>
 

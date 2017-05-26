@@ -41,6 +41,17 @@ var HeroesComponent = (function () {
             _this.selectedHero = null;
         });
     };
+    HeroesComponent.prototype.deleteHero = function (hero) {
+        var _this = this;
+        if (!hero)
+            return;
+        this.heroService.delete(hero.id)
+            .then(function () {
+            _this.heroes = _this.heroes.filter(function (h) { return h !== hero; });
+            if (_this.selectedHero === hero)
+                _this.selectedHero = null;
+        });
+    };
     return HeroesComponent;
 }());
 HeroesComponent = __decorate([
