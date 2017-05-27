@@ -4,12 +4,12 @@ import {Location} from '@angular/common';
 import 'rxjs/add/operator/switchMap';
 
 
-import {Hero} from './hero';
-import {HeroService} from './hero.service'
+import {Hero} from '../../objects/hero';
+import {HeroService} from '../../services/hero.service'
 
 @Component({
   selector: 'hero-detail',
-  templateUrl: './template/hero-detail.component.html'
+  templateUrl: 'app/templates/hero-detail.component.html'
 })
 export class HeroDetailComponent implements OnInit {
 
