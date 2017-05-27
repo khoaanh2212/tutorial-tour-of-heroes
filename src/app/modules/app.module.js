@@ -17,6 +17,7 @@ var app_component_1 = require("../components/basic/app.component");
 var heroes_component_1 = require("../components/hero/heroes.component");
 var dashboard_component_1 = require("../components/hero/dashboard.component");
 var hero_detail_component_1 = require("../components/hero/hero-detail.component");
+var hero_search_component_1 = require("../components/hero/hero-search.component");
 var hero_service_1 = require("../services/hero.service");
 var AppModule = (function () {
     function AppModule() {
@@ -30,7 +31,7 @@ AppModule = __decorate([
             http_1.HttpModule,
             angular_in_memory_web_api_1.InMemoryWebApiModule.forRoot(in_memory_data_service_1.InMemoryDataService),
             app_routing_module_1.AppRoutingModule],
-        declarations: [app_component_1.AppComponent, heroes_component_1.HeroesComponent, hero_detail_component_1.HeroDetailComponent, dashboard_component_1.DashBoardComponent],
+        declarations: [app_component_1.AppComponent, heroes_component_1.HeroesComponent, hero_detail_component_1.HeroDetailComponent, dashboard_component_1.DashBoardComponent, hero_search_component_1.HeroSearchComponent],
         providers: [hero_service_1.HeroService],
         bootstrap: [app_component_1.AppComponent]
     })

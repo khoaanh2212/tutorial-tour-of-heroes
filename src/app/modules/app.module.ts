@@ -13,7 +13,9 @@ import {AppComponent} from '../components/basic/app.component';
 import {HeroesComponent}  from '../components/hero/heroes.component';
 import {DashBoardComponent} from '../components/hero/dashboard.component';
 import {HeroDetailComponent} from '../components/hero/hero-detail.component';
+import {HeroSearchComponent} from '../components/hero/hero-search.component';
 import {HeroService} from '../services/hero.service';
+import {HeroSearchService} from '../services/hero-search.service'
 
 @NgModule({
   imports: [BrowserModule,
@@ -21,7 +23,7 @@ import {HeroService} from '../services/hero.service';
     HttpModule,
     InMemoryWebApiModule.forRoot(InMemoryDataService),
     AppRoutingModule],
-  declarations: [AppComponent, HeroesComponent, HeroDetailComponent, DashBoardComponent],
+  declarations: [AppComponent, HeroesComponent, HeroDetailComponent, DashBoardComponent, HeroSearchComponent],
   providers: [HeroService],
   bootstrap: [AppComponent]
 })
